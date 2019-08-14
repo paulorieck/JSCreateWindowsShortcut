@@ -29,14 +29,11 @@ function writeScriptOnTemp(script, callback) {
 
 }
 
-create_windows_shortcut = module.exports = {
+module.exports = {
 
     createShortcut: function (target_path, destiny_path, name, icon, callback) {
 
         writeScriptOnTemp(createShortcutScript, function (tmp_path) {
-
-            console.log("tmp_path: "+tmp_path);
-            console.log("");
 
             if ( typeof icon === "function" ) {
                 callback = icon;
@@ -58,7 +55,11 @@ create_windows_shortcut = module.exports = {
             });
             
             run_script.on('close', (code) => {
+
+                fs.unlinkSync(tmp_path);
+
                 callback();
+
             });
 
         });

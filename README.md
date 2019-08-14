@@ -17,7 +17,7 @@ Where:
 - target_path - Is the file that will be linked;
 - destiny_path - Where the link will be placed;
 ```
-var target_path = path.join(os.home(), "Desktop");
+var target_path = path.join(os.homedir(), "Desktop");
 ```
 - name - Name of the link;
 - icon - (Optional) - The icon to associate to the shortcut file; 
