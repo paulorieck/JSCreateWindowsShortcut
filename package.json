@@ -1,0 +1,22 @@
+{
+  "name": "create-windows-shortcut",
+  "version": "0.0.1",
+  "description": "Creates shortcuts (links) to npm executables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "windows", "shortcuts", "links", "desktop", "menu"
+  ],
+  "author": "Paulo André Rieck",
+  "license": "MIT",
+  "dependencies": {
+    "tmp": "^0.1.0"
+  },
+  "os" : [ "win32" ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulorieck/ZionBox-Service.git"
+  },
+}
