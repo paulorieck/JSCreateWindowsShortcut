@@ -17,6 +17,6 @@
   "os" : [ "win32" ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulorieck/ZionBox-Service.git"
-  },
+    "url": "https://github.com/paulorieck/JSCreateWindowsShortcut.git"
+  }
 }
