@@ -2,7 +2,25 @@
 
 Creates shortcuts to scripts and binaries.
 
+Works on Windows!
 
+Example:
+```
+const windows_shortcut = require("create-windows-shortcut");
+
+windows_shortcut.createShortcut(target_path, destiny_path, name, icon, function () {
+    console.log("Creation succeeded!");
+});
+```
+
+Where:
+- target_path - Is the file that will be linked;
+- destiny_path - Where the link will be placed;
+```
+var target_path = path.join(os.home(), "Desktop");
+```
+- name - Name of the link;
+- icon - (Optional) - The icon to associate to the shortcut file; 
 
 ## License
 Copyright (c) 2019 GWTK Software
